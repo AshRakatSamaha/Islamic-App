@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.islamic.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.islamic.quran.ui.QuranFragment"
+        android:label="fragment_quran_screen"
+        tools:layout="@layout/fragment_quran_screen">
+        <action
+            android:id="@+id/action_quranFragment_to_suraDetailsFragment"
+            app:destination="@id/suraDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hadethFragment"
+        android:name="com.example.islamic.HadethFragment"
+        android:label="fragment_hadeth"
+        tools:layout="@layout/fragment_hadeth" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.islamic.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/sebhaFragment"
+        android:name="com.example.islamic.SebhaFragment"
+        android:label="fragment_sebha"
+        tools:layout="@layout/fragment_sebha" />
+    <fragment
+        android:id="@+id/suraDetailsFragment"
+        android:name="com.example.islamic.quran.ui.SuraDetailsFragment"
+        android:label="fragment_sura_details"
+        tools:layout="@layout/fragment_sura_details">
+        <action
+            android:id="@+id/action_suraDetailsFragment_to_quranFragment"
+            app:destination="@id/quranFragment"
+            app:popUpTo="@id/quranFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

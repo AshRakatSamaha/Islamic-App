@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suraContentTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:fontFamily="@font/poppins_regular"
+    android:padding="5dp"
+    android:text="الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
+ الرَّحْمَنِ الرَّحِيمِ
+ مَالِكِ يَوْمِ الدِّينِ
+ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ
+ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ
+ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّين
+
+"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="30sp">
+
+</TextView>
